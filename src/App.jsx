@@ -38,7 +38,7 @@ export default function App() {
   return (
     <div className="flex flex-col h-screen w-screen">
       <Header timeRange={timeRange} setTimeRange={setTimeRange} />
-      <div className="flex-1 relative">
+      <div className="flex-1 relative overflow-hidden">
         <EarthquakeMap earthquakes={earthquakes} plates={plates} />
       </div>
     </div>
