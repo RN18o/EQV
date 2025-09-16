@@ -1,4 +1,4 @@
-# About Projec
+# About Project
 A web application to visualize recent global earthquake activity using the [USGS Earthquake API].  
 Built with **React, Leaflet, TailwindCSS**, and tectonic plates overlay for better seismic pattern analysis.
 
