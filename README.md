@@ -1,47 +1,25 @@
-# Incident Management System
+# About Project
+A web application to visualize recent global earthquake activity using the [USGS Earthquake API].  
+Built with **React, Leaflet, TailwindCSS**, and tectonic plates overlay for better seismic pattern analysis.
 
-A full-stack web application to report, track, and manage incidents efficiently.  
-This system allows users to create, update, and view their own incidents, while ensuring that users can’t modify others’ reports.  
+## Deployment Link - https://eqv-git-main-aryan-chaurasiyas-projects.vercel.app/
 
----
 
-## 📁 Project Structure
+## Features
+- Interactive world map with earthquake markers
+- Magnitude-based color coding (Green → Red)
+- Time range filters (Past Hour, Day, Week, Month)
+- Tectonic plate boundaries overlay
+- Popups with detailed earthquake info (location, magnitude, time, time ago)
+- Responsive design with TailwindCSS
+- Supports multiple base maps (CartoDB, OSM, Google Streets, Satellite)
 
-project/
-│
-├── backend/
-│ ├── app.js
-│ ├── server.js
-│ ├── config/
-│ │ └── db.js
-│ ├── controllers/
-│ │ ├── userController.js
-│ │ └── incidentController.js
-│ ├── middleware/
-│ │ └── authMiddleware.js
-│ ├── models/
-│ │ ├── User.js
-│ │ └── Incident.js
-│ ├── routes/
-│ │ ├── userRoutes.js
-│ │ └── incidentRoutes.js
-│ ├── services/
-│ │ └── incidentService.js
-│ │ └── userServices.js
-│ ├── utils/
-│ │ └── sendEmail.
-│ └── package.json
-│
-├── frontend/
-│ ├── src/
-│ │ ├── components/ # Reusable UI components
-│ │ ├── pages/ # Page-level React components (Login, Dashboard, etc.)
-│ │ ├── context/ # Auth / global state context
-│ │ ├── assets/ # Images or static files
-│ │ ├── App.jsx
-│ │ └── main.jsx
-│ ├── package.json
-│ └── vite.config.js
+
+## 🛠️ Tech Stack
+- [React](https://reactjs.org/) – Frontend framework
+- [Leaflet](https://leafletjs.com/) & [React-Leaflet](https://react-leaflet.js.org/) – Map rendering
+- [TailwindCSS](https://tailwindcss.com/) – Styling
+- [USGS Earthquake API] – Real-time earthquake data
 
 
 # Setup and launch process
@@ -49,32 +27,25 @@ project/
        Open your terminal and run the following command to clone the repository:<br/>
       
        ```
-       git clone https://github.com/RN18o/IMS.git
+       git clone https://github.com/RN18o/EQV.git
        
        ``` 
 
        
 **2). Navigate to the Project Directory**<br/>
-       Change into the project frontend directory:</br>
+       Change into the project directory:</br>
        
        ```
-       cd Frontend
-       
-       ```
-       
-       Change into the project Backend directory:</br>
-       
-       ```
-       cd Backend
+       cd EQV
        
        ```
 
        
 **3). Install Dependencies **<br/>
-       Install the necessary packages using npm in both Frontend and Backend:<br/>
+       Install the necessary packages using npm:<br/>
        
        ```
-       npm install all
+       npm install
        or
        yarn install
        
@@ -83,7 +54,6 @@ project/
        
 **4). Start the Development Server**<br/>
        After installing the dependencies, you can start the development server with:<br/>
-       For Frontend and Backend --> 
       
       ```
       
@@ -97,7 +67,7 @@ project/
 **5). Access the Application**<br/>
       Open your web browser and navigate to:<br/> 
      ```
-      http://localhost:5173/login
+      http://localhost:5173/
       ``` <br/>
-      You should see the Incident management System application running on  your local. 
+      You should see the Earthquake_visualizer application running on  your local. 
 
